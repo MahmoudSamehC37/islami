@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/mainbackground"
+    tools:context=".Fragments.SebhaFragment">
+
+    <TextView
+        android:id="@+id/tv_islami"
+        style="@style/text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="اسلامي"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        />
+    <ImageView
+        android:id="@+id/head_sebha"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/head_sebha_logo"
+        app:layout_constraintTop_toBottomOf="@id/tv_islami"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="-40dp"
+        app:layout_constraintBottom_toTopOf="@id/body_sebha"
+
+        />
+
+    <ImageView
+        android:id="@+id/body_sebha"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/body_sebha_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="-10dp"
+        app:layout_constraintTop_toBottomOf="@id/head_sebha" />
+
+        <TextView
+            android:id="@+id/add_eltsbah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="عدد التسبيحات"
+            app:layout_constraintTop_toBottomOf="@id/body_sebha"
+            app:layout_constraintStart_toStartOf="@id/body_sebha"
+            app:layout_constraintEnd_toEndOf="@id/body_sebha"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            style="@style/text_style"
+            />
+
+    <TextView
+        android:id="@+id/counter_sabha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/add_eltsbah"
+        app:layout_constraintStart_toStartOf="@id/add_eltsbah"
+        app:layout_constraintEnd_toEndOf="@id/add_eltsbah"
+        android:text="0"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/rac"
+        android:textSize="25sp"
+        style="@style/text_style"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/phase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/counter_sabha"
+        app:layout_constraintStart_toStartOf="@id/add_eltsbah"
+        app:layout_constraintEnd_toEndOf="@id/add_eltsbah"
+        android:text="سبحان الله"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/rac2"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        style="@style/azker_style"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

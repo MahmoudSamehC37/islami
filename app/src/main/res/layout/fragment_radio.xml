@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/mainbackground"
+    tools:context=".Fragments.RadioFragment">
+
+    <TextView
+        android:id="@+id/tv_islami"
+        android:layout_width="wrap_content"
+        style="@style/text_style"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="اسلامي"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        />
+
+    <ImageView
+        android:id="@+id/img_radio"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/radio_image"
+        app:layout_constraintTop_toBottomOf="@id/tv_islami"
+        android:layout_marginTop="150dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_redio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="إذاعة القرآن الكريم"
+        app:layout_constraintTop_toBottomOf="@id/img_radio"
+        app:layout_constraintStart_toStartOf="@id/img_radio"
+        app:layout_constraintEnd_toEndOf="@id/img_radio"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        style="@style/text_style"
+        />
+
+        <ImageView
+            android:id="@+id/play"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_play"
+            app:layout_constraintTop_toBottomOf="@id/tv_redio"
+            app:layout_constraintStart_toStartOf="@id/tv_redio"
+            app:layout_constraintEnd_toEndOf="@id/tv_redio"
+            android:layout_marginTop="30dp"
+            />
+
+    <ImageView
+        android:id="@+id/next"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_next"
+        app:layout_constraintTop_toBottomOf="@id/tv_redio"
+        app:layout_constraintStart_toEndOf="@id/play"
+        app:layout_constraintEnd_toEndOf="@id/tv_redio"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="40dp"
+        />
+    <ImageView
+        android:id="@+id/previous"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_baseline_skip_previous_24"
+        app:layout_constraintTop_toBottomOf="@id/tv_redio"
+        app:layout_constraintEnd_toStartOf="@id/play"
+        app:layout_constraintStart_toStartOf="@id/tv_redio"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
